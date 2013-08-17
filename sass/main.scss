@@ -1,71 +1,125 @@
 @import 'compass/reset';
 @import 'compass/css3';
 
+$grey: #787878;
+$black: #3d3d3d;
+$light_black: #e4e4e4;
+$light_grey: #fffbf7;
+
 .home-container{
-  margin-top: 50px;
+
+  color: $grey;
   .slides{
     list-style: none;
     .slide{
       .banner{
         position: relative;
-        background: #eee;
-        background: image-url('banner.jpg') center center no-repeat;
+        background: #DAD3CF url('../images/banner.jpg') center center no-repeat;
         width: 100%;
-        background-size: cover;
-
         height: 450px;
+        border-bottom: 1px solid $light_black;
+      }
 
-        .slogan{
-          margin-bottom: 0;
-          height: 100px;
-          @include box-sizing(border-box);
-          padding: 30px;
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          background: rgba(0, 0, 0, .7);
-          color: white;
+      .show{
+        padding: 30px;
+        @include box-sizing(border-box);
+        border-bottom: 1px solid $light_black;
+        background: #f6eee9;
+        .content{
+          font-size: 16px;
+          p{
+            margin-bottom: 25px;
+            color: #738089;
+          }
+          p.highlight{
+            color: #626574;
+            @include text-shadow(1px 0 9px rgba(0, 0, 0, 0.5));
+            span.big{
+              @include text-shadow(1px 0 6px rgba(0, 0, 0, 0.8));
+              font-size: 1.1em;
+            }
+          }
+          span.big{
+            color: #42475b;
+            @include text-shadow(1px 1px 0px rgba(0, 0, 0, 0.2));
+          }
+        }
+        .iphone{
+          position: relative;
+          width: 271px;
+          margin: 0 auto;
+          img{
+            width: 271px;
+          }
+          .screen{
+            position: absolute;
+            top: 98px;
+            left: 25px;
+            width: 224px;
+            height: 382px;
+            overflow: hidden;
+            .pics{
+              outline: 1px solid pink;
+              width: 2500px;
+              li{
+                position: relative;
+                width: 224px;
+                height: 382px;
+                float: left;
+                margin-right: 30px;
+                background: #eee;
+                img{
+                  width: 224px;
+                  height: 382px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .article{
+        p{
+          margin-bottom: 44px;
+        }
+        background: $light_grey;
+        @include box-sizing(border-box);
+        border-bottom: 1px solid $light_black;
+        padding: 30px;
+        .icon{
+          text-align: center;
+          color: #a0a4b7;
+          margin-top: 44px;
+        }
+        .question{
+          color: $black;
+          font-size: 21px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .answer{
+          color: $grey;
+          i{
+            color: $light_black;
+          }
+          a{
+            color: $black;
+            font-weight: bold;
+          }
+          .highlight{
+            color: #42475b;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .accounts{
+        i{
           font-size: 36px;
           text-align: right;
-          font-weight: bold;
-        }
-      }
-      .desc{
-        @include box-sizing(border-box);
-        padding: 30px;
-        .story{
-          height: 520px;
-          .title{
-            height: 50px;
-          }
-          .title h3{
-            line-height: 50px;
-            margin: 10px auto;
-            text-align: center;
-          }
-          background: #eee;
-          margin-bottom: 30px;
-          img{
-            width: 100%;
-          }
-          p{
-            @include box-sizing(border-box);
-            padding: 20px;
-            text-align: center;
-          }
-        }
-      }
-      .groups{
-        @include box-sizing(border-box);
-        padding: 30px;
-        background: #aaa;
-        .thumbnail{
-          background: #fff;
-          height: 300px;
+          color: $light_black;
         }
       }
     }
   }
 }
-
-

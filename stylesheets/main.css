@@ -46,60 +46,91 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 .home-container {
-  margin-top: 50px; }
+  color: #787878; }
   .home-container .slides {
     list-style: none; }
     .home-container .slides .slide .banner {
       position: relative;
-      background: #eee;
-      background: url('/images/banner.jpg') center center no-repeat;
+      background: #dad3cf url("../images/banner.jpg") center center no-repeat;
       width: 100%;
-      background-size: cover;
-      height: 450px; }
-      .home-container .slides .slide .banner .slogan {
-        margin-bottom: 0;
-        height: 100px;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        padding: 30px;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        font-size: 36px;
-        text-align: right;
-        font-weight: bold; }
-    .home-container .slides .slide .desc {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      padding: 30px; }
-      .home-container .slides .slide .desc .story {
-        height: 520px;
-        background: #eee;
-        margin-bottom: 30px; }
-        .home-container .slides .slide .desc .story .title {
-          height: 50px; }
-        .home-container .slides .slide .desc .story .title h3 {
-          line-height: 50px;
-          margin: 10px auto;
-          text-align: center; }
-        .home-container .slides .slide .desc .story img {
-          width: 100%; }
-        .home-container .slides .slide .desc .story p {
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          padding: 20px;
-          text-align: center; }
-    .home-container .slides .slide .groups {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
+      height: 450px;
+      border-bottom: 1px solid #e4e4e4; }
+    .home-container .slides .slide .show {
       padding: 30px;
-      background: #aaa; }
-      .home-container .slides .slide .groups .thumbnail {
-        background: #fff;
-        height: 300px; }
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border-bottom: 1px solid #e4e4e4;
+      background: #f6eee9; }
+      .home-container .slides .slide .show .content {
+        font-size: 16px; }
+        .home-container .slides .slide .show .content p {
+          margin-bottom: 25px;
+          color: #738089; }
+        .home-container .slides .slide .show .content p.highlight {
+          color: #626574;
+          text-shadow: 1px 0 9px rgba(0, 0, 0, 0.5); }
+          .home-container .slides .slide .show .content p.highlight span.big {
+            text-shadow: 1px 0 6px rgba(0, 0, 0, 0.8);
+            font-size: 1.1em; }
+        .home-container .slides .slide .show .content span.big {
+          color: #42475b;
+          text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2); }
+      .home-container .slides .slide .show .iphone {
+        position: relative;
+        width: 271px;
+        margin: 0 auto; }
+        .home-container .slides .slide .show .iphone img {
+          width: 271px; }
+        .home-container .slides .slide .show .iphone .screen {
+          position: absolute;
+          top: 98px;
+          left: 25px;
+          width: 224px;
+          height: 382px;
+          overflow: hidden; }
+          .home-container .slides .slide .show .iphone .screen .pics {
+            outline: 1px solid pink;
+            width: 2500px; }
+            .home-container .slides .slide .show .iphone .screen .pics li {
+              position: relative;
+              width: 224px;
+              height: 382px;
+              float: left;
+              margin-right: 30px;
+              background: #eee; }
+              .home-container .slides .slide .show .iphone .screen .pics li img {
+                width: 224px;
+                height: 382px; }
+    .home-container .slides .slide .article {
+      background: #fffbf7;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border-bottom: 1px solid #e4e4e4;
+      padding: 30px; }
+      .home-container .slides .slide .article p {
+        margin-bottom: 44px; }
+      .home-container .slides .slide .article .icon {
+        text-align: center;
+        color: #a0a4b7;
+        margin-top: 44px; }
+      .home-container .slides .slide .article .question {
+        color: #3d3d3d;
+        font-size: 21px;
+        font-weight: bold;
+        text-align: center; }
+      .home-container .slides .slide .article .answer {
+        color: #787878; }
+        .home-container .slides .slide .article .answer i {
+          color: #e4e4e4; }
+        .home-container .slides .slide .article .answer a {
+          color: #3d3d3d;
+          font-weight: bold; }
+        .home-container .slides .slide .article .answer .highlight {
+          color: #42475b;
+          font-weight: bold; }
+    .home-container .slides .slide .accounts i {
+      font-size: 36px;
+      text-align: right;
+      color: #e4e4e4; }
