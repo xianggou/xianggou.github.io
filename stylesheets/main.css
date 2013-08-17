@@ -1,0 +1,105 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+.home-container {
+  margin-top: 50px; }
+  .home-container .slides {
+    list-style: none; }
+    .home-container .slides .slide .banner {
+      position: relative;
+      background: #eee;
+      background: url('/images/banner.jpg') center center no-repeat;
+      width: 100%;
+      background-size: cover;
+      height: 450px; }
+      .home-container .slides .slide .banner .slogan {
+        margin-bottom: 0;
+        height: 100px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 30px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        font-size: 36px;
+        text-align: right;
+        font-weight: bold; }
+    .home-container .slides .slide .desc {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 30px; }
+      .home-container .slides .slide .desc .story {
+        height: 520px;
+        background: #eee;
+        margin-bottom: 30px; }
+        .home-container .slides .slide .desc .story .title {
+          height: 50px; }
+        .home-container .slides .slide .desc .story .title h3 {
+          line-height: 50px;
+          margin: 10px auto;
+          text-align: center; }
+        .home-container .slides .slide .desc .story img {
+          width: 100%; }
+        .home-container .slides .slide .desc .story p {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          padding: 20px;
+          text-align: center; }
+    .home-container .slides .slide .groups {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 30px;
+      background: #aaa; }
+      .home-container .slides .slide .groups .thumbnail {
+        background: #fff;
+        height: 300px; }

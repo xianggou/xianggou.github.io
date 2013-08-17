@@ -1,0 +1,71 @@
+@import 'compass/reset';
+@import 'compass/css3';
+
+.home-container{
+  margin-top: 50px;
+  .slides{
+    list-style: none;
+    .slide{
+      .banner{
+        position: relative;
+        background: #eee;
+        background: image-url('banner.jpg') center center no-repeat;
+        width: 100%;
+        background-size: cover;
+
+        height: 450px;
+
+        .slogan{
+          margin-bottom: 0;
+          height: 100px;
+          @include box-sizing(border-box);
+          padding: 30px;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          background: rgba(0, 0, 0, .7);
+          color: white;
+          font-size: 36px;
+          text-align: right;
+          font-weight: bold;
+        }
+      }
+      .desc{
+        @include box-sizing(border-box);
+        padding: 30px;
+        .story{
+          height: 520px;
+          .title{
+            height: 50px;
+          }
+          .title h3{
+            line-height: 50px;
+            margin: 10px auto;
+            text-align: center;
+          }
+          background: #eee;
+          margin-bottom: 30px;
+          img{
+            width: 100%;
+          }
+          p{
+            @include box-sizing(border-box);
+            padding: 20px;
+            text-align: center;
+          }
+        }
+      }
+      .groups{
+        @include box-sizing(border-box);
+        padding: 30px;
+        background: #aaa;
+        .thumbnail{
+          background: #fff;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
+
