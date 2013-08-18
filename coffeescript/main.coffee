@@ -8,10 +8,28 @@ $ ->
     n += 1
     $('.show .content p').removeClass('highlight')
     $($('.show .content p').get(n % 9)).addClass 'highlight'
-    $('.show ul.pics li:eq(1)').animate
-      left: '-=254px'
-    , 500, ->
-      $('.show ul.pics').append $('.show ul.pics li:first').css('left', 0)
-      $('.show ul.pics li:first').css('left', 0)
+
+    if n % 9 == 1
+      $('.show ul.pics li:eq(1)').css("left", '-254px')
+      $('.show ul.pics li:eq(0)').animate
+        top: '-=382px'
+      , 1500, ->
+        $('.show ul.pics').append $('.show ul.pics li:first')
+        $('.show ul.pics li:first').css("left", 0)
+
+    else if n % 9 == 0
+      $('.show ul.pics li:eq(1)').css('left', '-254px')
+      $('.show ul.pics li:eq(1)').animate
+        top: '+=382px'
+      , 1500, ->
+        $('.show ul.pics').append $('.show ul.pics li:first').css('top', 0)
+        $('.show ul.pics li:first').css("left", 0)
+
+    else
+      $('.show ul.pics li:eq(1)').animate
+        left: '-=254px'
+      , 500, ->
+        $('.show ul.pics').append $('.show ul.pics li:first').css('left', 0)
+        $('.show ul.pics li:first').css('left', 0)
 
   , 3000

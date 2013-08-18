@@ -101,6 +101,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
               .home-container .slides .slide .show .iphone .screen .pics li img {
                 width: 224px;
                 height: 382px; }
+              .home-container .slides .slide .show .iphone .screen .pics li.cover {
+                z-index: 99; }
     .home-container .slides .slide .article {
       background: #fffbf7;
       -webkit-box-sizing: border-box;

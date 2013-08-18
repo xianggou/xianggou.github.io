@@ -71,6 +71,9 @@ $light_grey: #fffbf7;
                   width: 224px;
                   height: 382px;
                 }
+                &.cover{
+                  z-index: 99;
+                }
               }
             }
           }
