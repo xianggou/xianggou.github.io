@@ -122,7 +122,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
         font-weight: bold;
         text-align: center; }
       .home-container .slides .slide .article .answer {
-        color: #787878; }
+        color: #787878;
+        background: #FFFEF7;
+        height: 200px;
+        text-indent: 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 20px;
+        -webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px; }
         .home-container .slides .slide .article .answer i {
           color: #e4e4e4; }
         .home-container .slides .slide .article .answer a {
@@ -131,7 +146,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
         .home-container .slides .slide .article .answer .highlight {
           color: #42475b;
           font-weight: bold; }
-    .home-container .slides .slide .accounts i {
-      font-size: 36px;
-      text-align: right;
-      color: #e4e4e4; }
+    .home-container .slides .slide .career {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border-bottom: 1px solid #e4e4e4;
+      padding: 30px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background: #f6eee9; }
+      .home-container .slides .slide .career .title {
+        color: #3d3d3d;
+        font-size: 36px;
+        margin-bottom: 30px; }
+      .home-container .slides .slide .career .sub {
+        color: #3d3d3d;
+        font-size: 18px; }
+    .home-container .slides .slide .about {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 30px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center;
+      background: #fffbf7; }
+      .home-container .slides .slide .about .brand {
+        color: #3d3d3d;
+        font-size: 32px; }
+      .home-container .slides .slide .about i {
+        font-size: 24px; }
+      .home-container .slides .slide .about a {
+        text-decoration: none;
+        letter-spacing: 30px;
+        color: #42475b; }
+      .home-container .slides .slide .about .contact {
+        color: #42475b; }
+      .home-container .slides .slide .about .power {
+        margin-top: 30px;
+        font-size: 18px;
+        text-align: center;
+        background: #fffbf7; }

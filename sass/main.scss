@@ -101,6 +101,13 @@ $light_grey: #fffbf7;
         }
         .answer{
           color: $grey;
+          background: #FFFEF7;
+          height: 200px;
+          text-indent:20px;
+          @include box-sizing(border-box);
+          padding: 20px;
+          @include box-shadow(0px 0px 9px rgba(0, 0, 0, 0.1));
+          @include border-radius(5px);
           i{
             color: $light_black;
           }
@@ -115,11 +122,57 @@ $light_grey: #fffbf7;
         }
       }
 
-      .accounts{
-        i{
+      .career{
+        @include box-sizing(border-box);
+        border-bottom: 1px solid $light_black;
+        padding: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        background: #f6eee9;
+
+        .title{
+          color: #3d3d3d;
           font-size: 36px;
-          text-align: right;
-          color: $light_black;
+          margin-bottom: 30px;
+        }
+
+        .sub{
+          color: #3d3d3d;
+          font-size: 18px;
+        }
+      }
+
+      .about{
+        @include box-sizing(border-box);
+        padding: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+
+        background: $light_grey;
+        .brand{
+          color: $black;
+          font-size: 32px;
+        }
+
+        i{
+          font-size: 24px;
+        }
+        a{
+          text-decoration: none;
+          letter-spacing: 30px;
+          color: #42475b;
+        }
+
+        .contact{
+          color: #42475b;
+        }
+        .power{
+          margin-top: 30px;
+          font-size: 18px;
+          text-align: center;
+          background: $light_grey;
         }
       }
     }
