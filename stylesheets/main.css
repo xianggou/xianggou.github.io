@@ -171,6 +171,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       padding-bottom: 50px;
       text-align: center;
       background: #fffbf7; }
+      .home-container .slides .slide .about .logo {
+        width: 130px;
+        height: 130px;
+        border: 1px solid #e4e4e4;
+        margin: 20px auto;
+        -webkit-border-radius: 23px;
+        -moz-border-radius: 23px;
+        -ms-border-radius: 23px;
+        -o-border-radius: 23px;
+        border-radius: 23px; }
+        .home-container .slides .slide .about .logo img {
+          width: 128px;
+          height: 128px; }
       .home-container .slides .slide .about .brand {
         color: #3d3d3d;
         font-size: 32px; }

@@ -151,6 +151,17 @@ $light_grey: #fffbf7;
         text-align: center;
 
         background: $light_grey;
+        .logo{
+          width: 130px;
+          height: 130px;
+          border: 1px solid $light_black;
+          margin: 20px auto;
+          @include border-radius(23px);
+          img{
+            width: 128px;
+            height: 128px;
+          }
+        }
         .brand{
           color: $black;
           font-size: 32px;
