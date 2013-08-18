@@ -90,7 +90,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
           height: 382px;
           overflow: hidden; }
           .home-container .slides .slide .show .iphone .screen .pics {
-            outline: 1px solid pink;
             width: 2500px; }
             .home-container .slides .slide .show .iphone .screen .pics li {
               position: relative;

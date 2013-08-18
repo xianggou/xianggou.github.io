@@ -9,10 +9,11 @@
       n += 1;
       $('.show .content p').removeClass('highlight');
       $($('.show .content p').get(n % 9)).addClass('highlight');
-      return $('.show ul.pics li:first').animate({
+      return $('.show ul.pics li:eq(1)').animate({
         left: '-=254px'
-      }, 0, function() {
-        return $('.show ul.pics').append($('.show ul.pics li:first').css('left', 0));
+      }, 500, function() {
+        $('.show ul.pics').append($('.show ul.pics li:first').css('left', 0));
+        return $('.show ul.pics li:first').css('left', 0);
       });
     }, 3000);
   });

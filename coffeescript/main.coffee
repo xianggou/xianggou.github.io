@@ -8,9 +8,10 @@ $ ->
     n += 1
     $('.show .content p').removeClass('highlight')
     $($('.show .content p').get(n % 9)).addClass 'highlight'
-    $('.show ul.pics li:first').animate
+    $('.show ul.pics li:eq(1)').animate
       left: '-=254px'
-    , 0, ->
+    , 500, ->
       $('.show ul.pics').append $('.show ul.pics li:first').css('left', 0)
+      $('.show ul.pics li:first').css('left', 0)
 
   , 3000
