@@ -177,6 +177,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
         margin-bottom: 30px; }
       .home-container .slides .slide .links a {
         color: #787878; }
+      .home-container .slides .slide .links div {
+        margin-bottom: 10px; }
     .home-container .slides .slide .about {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
