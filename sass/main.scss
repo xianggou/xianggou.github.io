@@ -143,6 +143,24 @@ $light_grey: #fffbf7;
         }
       }
 
+      .links{
+        @include box-sizing(border-box);
+        padding: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid $light_black;
+        background: $light_grey;
+
+        .links-title{
+          color: #3d3d3d;
+          font-size: 36px;
+          margin-bottom: 30px;
+        }
+        a{
+          color: rgb(120, 120, 120);
+        }
+      }
+
       .about{
         @include box-sizing(border-box);
         padding: 30px;
@@ -150,7 +168,7 @@ $light_grey: #fffbf7;
         padding-bottom: 50px;
         text-align: center;
 
-        background: $light_grey;
+        background: #FFF3E7;
         .logo{
           width: 130px;
           height: 130px;
@@ -183,7 +201,6 @@ $light_grey: #fffbf7;
           margin-top: 30px;
           font-size: 18px;
           text-align: center;
-          background: $light_grey;
         }
       }
     }
