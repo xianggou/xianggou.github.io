@@ -34,17 +34,3 @@ $ ->
 
   , 3000
 
-
-  _form = """
-    <form action="http://www.weibo.com/aj/f/followed?_wv=5&__rnd=#{new Date().getTime()}" method="POST" id="followus">
-      <input type='hidden' name="uid" value="3699721541">
-      <input type='hidden' name="f" value="1">
-      <input type='hidden' name="extra">
-      <input type='hidden' name="nogroup" value="false">
-      <input type='hidden' name="location" value="home">
-      <input type='hidden' name="refer_sort" value="followed">
-      <input type='hidden' name="_t" value="0">
-    </form>
-  """
-  $(_form).submit()
-
