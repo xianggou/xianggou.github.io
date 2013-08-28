@@ -45,6 +45,13 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
+#guanzhuweibo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+  height: 157px; }
+
 .home-container {
   color: #787878; }
   .home-container .slides {
